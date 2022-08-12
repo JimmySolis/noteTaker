@@ -1,30 +1,12 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
+        "title": "Hello,",
+        "text": "GOD LOVES YOU 😇",
+        "id": "bc610586-0420-4e87-8ee6-c4cc327a27c1"
     },
     {
-        "title": "Does This Thing Work? 🧐",
-        "text": "Testing out the get resquesting in server.js"
-    },
-    {
-        "title": "😇",
-        "text": "Hello"
-    },
-    {
-        "title": "Hello ",
-        "text": "We want it to appear by itsself."
-    },
-    {
-        "title": "here we go again",
-        "text": "but this time we hard code the path."
-    },
-    {
-        "title": "lets a go again",
-        "text": "Here goes nothing"
-    },
-    {
-        "title": "fff",
-        "text": "ffffffff"
+        "title": "My Name is",
+        "text": "Jimmy Solis. A humble servant to God all mighty.",
+        "id": "d2708232-4ed9-4bd6-8869-d631821ba1e5"
     }
 ]
