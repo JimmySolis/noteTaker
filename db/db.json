@@ -1,10 +1,30 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Test Title",
+        "text": "Test text"
     },
     {
-        "title":"Does This Thing Work? 🧐",
-        "text":"Testing out the get resquesting in server.js"
+        "title": "Does This Thing Work? 🧐",
+        "text": "Testing out the get resquesting in server.js"
+    },
+    {
+        "title": "😇",
+        "text": "Hello"
+    },
+    {
+        "title": "Hello ",
+        "text": "We want it to appear by itsself."
+    },
+    {
+        "title": "here we go again",
+        "text": "but this time we hard code the path."
+    },
+    {
+        "title": "lets a go again",
+        "text": "Here goes nothing"
+    },
+    {
+        "title": "fff",
+        "text": "ffffffff"
     }
 ]
