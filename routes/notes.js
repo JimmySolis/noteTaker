@@ -2,13 +2,13 @@ const note = require('express').Router();
 const  {readFromFile, writeToFile, readAndAppend} = require('../helper/fsUtils.js');
 let dbJson  = require('../db/db.json');
 const { v4: uuidv4 } = require('uuid');
-const removeNote = require('../helper/noteRemover');
+// const removeNote = require('../helper/noteRemover');
 
 
 
 
 note.get('/', (req, res) => {
-    readFromFile('./db/db.json', 'utf-8').then((data) => res.json(JSON.parse(data)));
+    readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
     // console.log(`${req.method}`);
     // res.json(`${req.method} request received`);
 })
@@ -27,7 +27,7 @@ note.post('/', (req, res) => {
         body: newNote,
       };
 
-    readAndAppend(newNote, './db/db.json');
+    readAndAppend(newNote, './db/db.json')
     console.log(response);
     res.json(response);
     }else{
@@ -43,16 +43,13 @@ note.delete('/:id', (req,res) => {
     if(deleted){
         console.info(`${req.method} request recived to get a single note`);
        dbJson = dbJson.filter(dbJson => dbJson.id != id);
-       writeToFile('./db/db.json', dbJson);
-       const response = {
-        status: 'success',
-        body: `Note ${id} was deleted!`,
-      };
 
-      res.json(response);
+       res.json(writeToFile('./db/db.json', dbJson))
+
+    //   res.status(200).json(dbJson);
         
         } else {
-        res.status(404).json('Note Id not provided')
+        res.status(404).json({ Message : 'Hitting the else in note.delete'})
     }
 });
 
