@@ -11,7 +11,7 @@
   - [Credits](#credits)
 
   ## Installation
-  There is no need to install any program. We have partnered up with Heroku. Here is to link to use in any web browser: https://nothing-but-notes.herokuapp.com/notes.
+  There is no need to install any program. We have partnered up with Heroku. Here is to link to use in any web browser: https://nothing-but-notes.herokuapp.com/
 
   ## Usage
   When you have arrived at the webpage click the button that will transfer you to the note page. Once there fill in a title for you note and write down what you want to note. Click the notes on the left and they will repear in the right. Make sure you dont forget to save a note before doing anthing else.  
